@@ -84,6 +84,7 @@ main {
     position: relative;
 }
 
+/* Cover text overlaid on hero section */
 #cover-text {
     /* Final rgba value sets the opacity so it is semi-transparent */
     background-color: rgba(241, 109, 107, .7);
@@ -133,6 +134,16 @@ hr {
     height: 90vw;
     width: 90vw;
     margin-bottom: 20px;
+    /* Make the square image into a circle */
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#benefits-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Footer */

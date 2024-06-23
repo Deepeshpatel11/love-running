@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200..700&display=swap');
 
 
-/* Asterisk wildcard selector to overide default styles added by the brower */
+/* Asterisk wildcard selector to override default styles added by the broswer */
 * {
     padding: 0;
     margin: 0;
@@ -14,7 +14,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* generic project styles */
+    /* Generic project styles */
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
@@ -172,13 +172,13 @@ hr {
 }
 
 #times h3 {
-    /* Override the heading color ser in general styles */
+    /* Override the heading color set in general styles */
     color: #fafafa;
 }
 
 /* Gallery page */
 #photos img {
-    width: 100%
+    width: 100%;
     line-height: 1em;
 }
 
@@ -216,6 +216,13 @@ hr {
     border-bottom: 1px solid #3a3a3a;
 }
 
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
@@ -276,13 +283,21 @@ hr {
         align-self: flex-end;
     }
 
+    /* Gallery HTML page */
+    #photos {
+        column-count: 3;
+    }
 }
 
 /* Media Query for laptops and desktops (992px and above)*/
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
-    } 
+    }
+    /* Gallery HTML page */
+    #photos {
+        column-count: 4;
+    }
 }
 
 /* Media Query for screen width of 1200px or more */

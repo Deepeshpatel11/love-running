@@ -256,6 +256,10 @@ hr {
         flex: 1;
     }
 
+    #benefits-image {
+        order: 0;
+    }
+
     #benefits-mental {
         order: 1;
     }
